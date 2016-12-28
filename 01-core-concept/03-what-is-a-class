@@ -1,0 +1,38 @@
+What is a class?
+- class: the blueprint
+- object: the house
+---------------
+CREATING A CLASS
+
+(type)
+name: what is it?
+  Employee, BankAccount, Event, Player, Document, Album
+
+(properties, data)
+attributes: what describes it?
+  Width, Height, color, Score, FileType, Length
+
+(operations)
+behavior: what can it do?
+  Play, Open, Search, Save, Print, Create, Delete, Close
+
+Method: Function that belongs to a class
+---------------------
+Example:
+CREATING A BANK ACCOUNT CLASS
+name: BankAccount
+attributes: accountNumber, balance, dateOpened, accountType
+behavior: open(), close(), deposit(), withdraw()
+-----------------
+- After writing class we create object based on that class
+- We create instance of that class (process is call: instanteneous)
+-----------------------
+Existing classes in OO Languages:
+Most OOP languages provides many pre-written generic classes at minimum: strings, dates,
+collections, file I/O, networking:
+
+Java Class Library
+.NET Framework BCL
+C++ Standard Library
+Ruby Standard Library
+Python Standard Library
