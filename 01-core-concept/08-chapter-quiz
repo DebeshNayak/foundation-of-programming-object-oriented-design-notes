@@ -1,0 +1,29 @@
+1. In an object-oriented language, a large program will be split into which of the following?
+Ans: - object that represent different parts of the application
+- self-contained objects
+- several mini-programs
+
+2. Which of the following describes the characteristics of an object in an object-oriented programming language?
+Ans: identity, attribute, and behavior
+
+3. Which of the following are true about a class?
+Ans: - a class is a blue print
+- a class is a detailed description
+- a class is a definition
+
+4. What is abstraction in object-oriented programming?
+Ans: a concept that's separate from any specifications
+
+5. The principle that an object should not reveal anything about itself except what is absolutely necessary
+  in order for other parts of the application to work is called:
+Ans: encapsulation
+
+6. If you have a Person class and you are crating a new one called Customer, this customer class is
+  almost the same as the Person class except for few differences. 1) Which object-oriented concept will
+  you apply to create the Customer class and 2) what is the term for each class?
+Ans: 1) inheritance 2) the Person class is the superclass and the Customer is the subclass
+
+7. Yo have two variables A and B where one represents an integer at one time and
+  other variable represents a string at some other time, if yo perform an addition
+  on these variables in each case, what will this behavior represent in object-oriented programming?
+Ans: polymorphism (which means many forms)

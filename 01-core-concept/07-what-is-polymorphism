@@ -1,0 +1,22 @@
+Notes:
+- When creating different classes and programming strings, learning how to apply
+  the right string at the right time is crucial.
+- Polymorphism help with exactly that issue.
+- What is polymorphism? - it is the term for programming that automatically detects
+  the right response to different actions.
+--------------------------------------------
+What is polymorphism?
+- Many forms
+- Automatically detect the correct behavior although we work on many different behavior.
+- Example: + (plus sign)
+  - Addition in case of integer
+  - Concatenation in case of string
+- Also this can be applied to our own classes and own objects
+- Suppose we have BankAccount class with two behaviors deposit() and withdraw(), and then
+  from this class we inherited 3 specialized version of sub-classes called CheckingAccount
+  class, SavingsAccount class, InvestmentAccount class, and in InvestmentAccount class we
+  want to modify the parent withdraw() then we can do thing by the concept call "Method Overriding".
+- Here there are two version of same method for InvestmentAccount, so we can inherit withdraw() method
+  of the same class when it is useful and overriding it from the parent class when that is useful.
+- So polymorphism gives us flexibility while programming
+- Understanding basic idea is enough for us where to use these APIE concepts.
