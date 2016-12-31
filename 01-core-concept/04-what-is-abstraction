@@ -1,0 +1,15 @@
+What is abstraction?
+- There are 4 things to keep in mind while creating classes.
+  - Abstraction
+  - Polymorphism
+  - Inheritance
+  - Encapsulation
+
+- Shortcut to remember - APIE
+
+Abstraction:
+- Abstraction focuses on the essential properties of a thing instead of one specific example.
+- If you think of a table, chances are that you give height and width to it, but don't consider exact dimensions.
+- Likewise, in Object-Oriented programming, when you make a class for bank accounts, you don't make a class
+  specifically for Joe's or Alice's account. Instead, you make a class that covers the
+  accounts of a broad set of people. 

@@ -1,6 +1,6 @@
 What is an Object?
 - What is an object in real world.
-- Identity, attribute and behaviour describe an object
+- Identity, attribute and behavior describe an object
 
 Objects are not always physical items.
 Object are not always visible items
@@ -14,4 +14,4 @@ Notes:
 - Real-world objects have their own identities and properties.
 - Objects in computer programming also do, but they go further.
   For example, a date or bank account can be an object in a computer program,
-  while you can't touch one in real life. 
+  while you can't touch one in real life.

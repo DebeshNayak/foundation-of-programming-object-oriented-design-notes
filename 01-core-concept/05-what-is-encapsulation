@@ -1,0 +1,12 @@
+What is encapsulation?
+- Same as capsule, medicine capsule, food capsule
+- Surrounding something - keep the contain together and protect them
+- So in the case of classes and object taking the properties and behavior and
+  bundling them together in a same unit or same class
+- Restrict access to the inner working of that class/object (Data hiding)
+
+Example: in the bank account class any other part of the application can't change
+it's property like accountBalance directly, they have to use it's corresponding method
+to change it's property.
+
+- Black boxing (only expose what ever necessary to the outside world - think of landline telephone)

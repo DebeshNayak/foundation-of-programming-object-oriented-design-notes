@@ -25,7 +25,7 @@ attributes: accountNumber, balance, dateOpened, accountType
 behavior: open(), close(), deposit(), withdraw()
 -----------------
 - After writing class we create object based on that class
-- We create instance of that class (process is call: instanteneous)
+- We create instance of that class (process is call: instantiation)
 -----------------------
 Existing classes in OO Languages:
 Most OOP languages provides many pre-written generic classes at minimum: strings, dates,
