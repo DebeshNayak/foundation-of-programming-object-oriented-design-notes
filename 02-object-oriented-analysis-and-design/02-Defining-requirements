@@ -1,0 +1,52 @@
+Gathering Requirements:
+1. Functional Requirement: what does it do?
+  - Features / Capabilities
+
+2. Non-functional Requirements: what else?
+  - Help
+  - Legal
+  - Performance
+  - Support
+  - Security
+
+Functional Requirements Examples:
+1. Simple
+  - "System must" display the heart rate, temperature and blood pressure of a
+    patient connected to the patient monitor.
+  - Application must allow user to search by customer's last name, telephone number
+    or order number.
+  - Program must allow receipts to be generated via email.
+  - Application must allow user to create 140-character message.
+  - Application must continue to function without network connection
+2. Complicated
+  - System must automatically produce monthly Comparative Analysis (using current
+    month and year-to-date as compared to same month last year and year-to-date
+    last year) report by: Product (unites sold and dollars), Product Category,
+    Customer, Department, Region. Report must be in PDF format and automatically
+    emailed to everyone in administrators group on first day of month.
+
+Non-functional Requirement Examples:
+  - System must respond to searches within 2 seconds
+  - Help desk available by telephone, Mon-Fri 8am-6pm
+  - Comply with all relevant HIPAA regulations
+  - Be available 99.99% of time during business hours
+
+* The bigger the organization the formal you need to be
+
+* Requirement analysis is a domain and it has some grate books
+
+* Requirements Analysis Approach:
+FURPS / FURPS+:
+  1. Functional Requirement: Feature of the App
+  2. Usability requirements: Documentation/Tutorial of this app
+  3. Reliability requirements: Disaster recovery, Acceptable failure rate
+  4. Performance requirements: Availability, capacity, resources
+  5. Supportability requirements: Who maintains it, could this be internationalized
+  6. +
+    - Design requirements: Could be a iPhone app
+    - Implementation requirements: what language that we should use? What standard? What methodologies should be used?
+    - Interface requirements: With which system this would going to be interfaced with?
+    - Physical requirements: Physical Constraint, needs to run with a camera, to be shipped with 50gb of DVD
+
+* In first iteration simple set of requirements, that is what should be required.
+* We have to written down from simple lines to a complete requirement documented with a more formal process

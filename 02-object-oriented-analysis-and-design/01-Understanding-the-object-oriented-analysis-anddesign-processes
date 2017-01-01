@@ -1,0 +1,50 @@
+Notes:
+- Object-oriented programming allows you to organize complex data sets in a way that makes manipulating data
+  more streamlined during coding.
+- In large part, this is due to the use of classes and objects within data sets.
+- Understanding object-oriented analysis and design processes helps yo learn how
+to identify classes and objects for use in your development projects.
+
+The object-oriented design process:
+? How to identify the classes.
+There are 5 process to do this:
+1. Gather "Requirements":
+  - What the app need to do
+  - What problem you trying to solve
+  - Focuses and get specific and write it down
+  - So that we can get the half pass idea that "What the app could do vs what the app going to do"
+
+2. "Describe" the app
+  - Describe the application in simple narative small self content pieces
+    that how people going to use the app
+  - Self contain pieces and there are some technique for this, using use cases and user storage.
+  - That will contain smallest set of storage that will contain real application.
+  - This may be still inaccurate or incomplete or may change but we have to proceed with the development
+  - At this point we don't have the mock up or prototype of the user interface,
+    sometime this is essential and sometime that is distraction
+
+3. "Identify" the main objects
+  - This is where we have to identify the actual classes.
+  - We have to pick out the most important idea, most important concept, the most important things of our
+    and discard what are irrelevant.
+  - Not everything we will pick here will not become a class, but the lot of them will
+
+4. Describe the "Interactions"
+  - Ex: A customer will open a bank account
+        A spaceship will explode when it touches a asteroid
+  - This will let us better understand interaction between those objects
+  - What they do and what order they need to do, and one way that is done is called sequence diagram
+
+5. Create a "Class Diagram"
+  - Visual representation of the class that you need.
+  - Here we have to take care about object oriented principle like: APIE
+
+So no coding yet.
+The output could be on whiteboard, notebook, piece of paper or using some electronics tool.
+
+- Result of these process is class diagram.
+  - The classes that you need to make
+  - The methods in those classes
+  - Interaction between those object in the application.
+
+- In iterative approach of software development, we need to revisit and refine these steps frequently during development cycle.
