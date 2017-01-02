@@ -1,0 +1,16 @@
+Creating a conceptual model:
+Notes:
+- Once you have use cases and user stories, programming development moves on
+  to a broader perspective.
+- You need to get an idea of the most important functions of your application.
+- Creating a conceptual model helps you see the most critical elements and how
+  they interact with each other.
+---------------
+- After creating use case we need to create a conceptual model of our application.
+- Conceptual Model means identifying most important object of the app.
+- Object is used here loosely, i.e. what are the things in the application that
+  we need to be aware of.
+- We start to refine the objects
+- Then draw them in simple diagram
+- And we can show the association/interaction between them, which object which other object and how did they use them
+- This step should not require more than 1 hour

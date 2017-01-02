@@ -32,7 +32,7 @@ Understanding use cases:
       number that Customer can use to check on order status. System will send Customer a confirmation of
       order details and tracking number in an email.
 -----------------------
-    Ex: Scenario As Steps:
+Ex: Scenario As Steps:
     Title: Purchase itmes
     Actor: Customer
 
