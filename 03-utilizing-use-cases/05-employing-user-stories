@@ -1,0 +1,63 @@
+Employing user stories:
+Notes:
+- Use cases delve into the details on a single process, but that is not the only
+  way to understand how a user might want to use an application.
+- Employing user stories allows you to quickly brainstorm dozens of different tasks
+  a user might want to accomplish.
+- This helps during programming, as it guides you as you make functionality and
+  interface decisions.
+--------------------
+* Another format for writing parts of our application:
+* What the user want to do and why they want to do it.
+* Unlike use case which is several pages, it is written as only one or probably
+  two sentences, and
+* It is written on index card
+* So it is short, sweet, and to the point
+
+* User story:
+As a ...(type of user)
+I want ...(goal)
+so that ...(reason)
+
+Example - 1:
+As a Bank Customer
+I want to change my PIN online
+so that I don't have to go into a branch
+
+Example - 2:
+As a User
+I want to search by keyword
+so that I can find and read relevant article
+
+Example - 3:
+As a User
+I want to sort entries by date
+so that I can find the most recent content
+
+Example - 4:
+As a Reader
+I want to change the font and color scheme
+so that I can read in different lighting
+
+Example - 5:
+As a User
+I want to be prompted to save
+so that I don't lose any work
+-------------------------
+User Stories:
+- short - one index card
+- one goal, no details
+- informal
+- "placeholder for conversation"
+- Used in Scrum or Extreme Programming methodologies
+
+Use Cases:
+- long - a document
+- multiple goals and details
+- casual to (very) formal
+- "record of conversation"
+- Formal Software Development Methodologies
+------------
+* Whether we write use case or user stories, we typically writing down all the
+  steps so that we can get all the necessary things that our next step that our
+  application needs.
