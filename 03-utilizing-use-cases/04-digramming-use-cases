@@ -1,0 +1,39 @@
+Diagramming use cases:
+Notes:
+- Writing use cases when programming helps document several scenarios, but it
+  does not always give context and interactions between different actions.
+- Diagramming use cases using UML allows you to see how a set of use cases and
+  several actors will interact with your application.
+- It also gives context to your development.
+------------
+* Use case diagram is misleading. It is not a diagram of use case.
+* A diagram of several use cases and multiple actors at the same time without
+  the details for each particular use case, so that we can overview these and
+  see how they can interact all in context.
+* It is not a substitution or replacement of written use case.
+
+- Stick figure represent as user
+- Ellipses around use cases
+- Line between actor and the use cases that they interact with.
+
+Example:
+
+                +----------------+
+                | Knowledge Base |
+                +----------------+
+Visitor         | Search Article |
+                |                |       +------------+
+                | View Article   |       |  <Actor>   |
+                |                |       | ---------- |
+Contributor     | Manage Users   |       | Analytics  |
+                |                |       |   System   |
+                | Create Article |       |            |
+                |                |       +------------+
+Administrator   | View Analytics |
+                |                |
+                +----------------+
+
+* There are two type of actor:
+  1. Primary Actor (human being)
+  2. Secondary Actor (other system)
+* There is no sequence to a Use case diagram
