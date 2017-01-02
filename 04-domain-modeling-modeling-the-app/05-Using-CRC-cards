@@ -1,0 +1,46 @@
+Using CRC cards:
+Notes:
+- Different organizational methods reveal different things when programming.
+- A conceptual design presents your application in one way, but using CRC cards
+  offers a different way of interpreting the same data.
+- Class, Responsibility, Collaboration cards allow you to quickly notate relevant
+  information for each class and organize classes in a variety of ways.
+-------------------
+CRC: Class, Responsibility, Collaborations
+
+Size: 4" x 6" index card
+
+Format:
+
+Class name
+
+
+Responsibility        +          Collaborators
+                      |
+....                  | .....
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      |
+                      +
+
+* Where
+  - "Collaborators" are the associated classes
+* We can arrange these card easily to figure out natural collaborator the way that the object interact
+* Inforce constraint: If more than 1 card needed for a class then we have to redesign a class.
+
+Example - 1:
+
+Order
+                           +
+Process order              | Customer
+Confirm order              | Item
+Get order number           | Email
+Get status                 | Address
+Create confirmation email  | Payment
+                           |
+                           |
+                           +
