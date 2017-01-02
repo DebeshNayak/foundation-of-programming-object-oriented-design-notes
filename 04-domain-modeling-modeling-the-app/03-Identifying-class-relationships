@@ -1,0 +1,41 @@
+Identifying class relationships:
+Notes:
+- Diagramming during programming helps you see all of the parts and pieces that
+  go into your application.
+- Identifying class relationships takes your diagram to the next level.
+- It not only shows you what actions each class might take, it tells you why.
+------------
+- Now we can show the association between these classes by drawing line between
+  these boxes.
+- In this case we can refer use case and user stories to verify these process.
+
+Conceptual Object Model:
++--------------+      +---------------+      +--------------+
+|              | uses |               |Contains             |
+|  Customer    +------+ Shopping Cart +------+  Item        |
+|              |      |               |1    *|              |
++------+-------+      +---------------+      +-------+------+
+       |    Places                                   |
+       +------------------+      +-------------------+
+                          |      |
++--------------+      +---+------+----+       +-------------+
+|              | Paid by              |Sent by|             |
+|    Payment   +------+    Order      +-------+    Email    |
+|              |      |               |       |             |
++--------------+      +-------+-------+       +-------------+
+                              |
+                              |
++--------------+              |
+|              |   Contains   |
+|   Address    +--------------+
+|              |
++--------------+
+
+
+- Optionally It is useful to add short note to describe the relationship
+- Optionally, in this diagram, we can add describe quantity using "1   *" format, call multiplicity
+* Benefit of Conceptual Modeling:
+  - Which object interact with each other
+  - Which object had behavior that effect other objects
+
+* Now we have to figure out the object's responsibility
