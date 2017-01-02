@@ -1,0 +1,70 @@
+Identifying  Responsibilities:
+Notes:
+ - While programming, drafting use cases and user stories can point to class responsibilities.
+ - These are the actions that each class will take.
+ - For example, a customer might be responsible for paying for items, entering payment information, and providing an address.
+ - Identifying class responsibilities allows you to assign functionality based on those responsibilities.
+-----------------------
+- Now we are going to identify what are and aren't classes that we need to create.
+- And most of these class are identified by figuring out from responsibility of our conceptual objects.
+- And these responsibility will going to become the method of the object
+- To identify the responsibility, we have to mark the "verbs" of the use case scenario or user story
+
+Example:
+Use Case Scenario:
+  - Customer "verifies" items in shopping cart
+  - Customer "provides payment and address" to "process sale".
+  - System "validates payment" and responds by "confirming order", and "provides order
+    number" that Customer can use to "check on order status".
+  - System will "send" Customer a copy of order details by email.
+
+Verb List:
+   Verify items                 Confirm order
+   Provide payment and address  Provide order number
+   Process sale                 "Check order status"
+   Validate payment             Send order details email
+
+- It initiate responsibility and describe whose responsibility to perform that behavior
+
+Example: Check order status
+  - As it is initiated by the Customer
+  - So whose responsibility is this? - Object is responsible for itself
+  - So here the "get status" method is the responsibility of the Order object
+
+- So the above responsibility can be assigned to the objects as in the following diagram:
+  +--------------+      +---------------+      +--------------+
+  |              |      |               |      |              |
+  |  Customer    +------+ Shopping Cart +------+  Payment     |
+  |              |      |               |      |              |
+  +------+-------+      +---------------+      +-------+------+
+         |               (Display totals)              |
+         +------------------+      +-------------------+
+                            |      |
+  +--------------+      +---+------+----+       +-------------+
+  |              |      |               |       |             |
+  |    Item      +------+    Order      +-------+    Email    |
+  |              |1    *|               |       |             |
+  +--------------+      +---------------+       +-------------+
+   Set payment details   |Process order           Send email
+                       +-+Confirm order
+  +--------------+     |  Get order number
+  |              |     | Get status
+  |   Address    +-----+ Create order confirmation email
+  |              |
+  +--------------+
+  Set address details
+
+--------------
+* There are several way to implement the ideas, not exact like above.
+* Here you can see there is no responsibility of customer but so many to the order.
+* The customer is causing to happen by requesting the behavior of other objects
+* Beginner to OOPs assign more responsibility to actors, in this case Customer
+----------------
+Working with system:
+Use cases like:
+  - System validates payment
+  - System will send Customer a copy of order details by email
+- In this case we need to figure out what part of the system causing the behavior
+--------
+* Avoid global master objects
+  - Responsibility should be distributed between objects not stored in master object like "system"
