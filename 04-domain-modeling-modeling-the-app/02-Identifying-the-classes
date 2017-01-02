@@ -1,0 +1,57 @@
+Identifying Objects:
+- Object-oriented programming works by designating classes that act as objects.
+- Identifying the classes allows you to associate different pieces of information
+  and setup functions to act on those classes.
+- Picking out classes helps you determine what functions need to affect what objects.
+-----------------
+Step - 1:
+Collect all use cases, user stories and any other user requirement together.
+
+Step - 2:
+Go through the use case/user story and start picking up(make underline) all the
+"nouns", because these are your possible object or candidate objects.
+
+  Use Case Scenario:
+  - "Customer" confirms "items" in "shopping cart".
+  - "Customer" provides "payment" and "address" to process sale.
+  - "System" validates "payment" and responds by confirming "order", and provides "order
+    number" and customer can use to check on "order status".
+  - System" will send customer a copy of "order details" by "email".
+
+Step - 3:
+- List all nouns:
+Customer        Order
+Item            -Order Number
+Shopping Cart   -Order Status
+Payment         -Order Details
+Address         Email
+-Sale           -System
+
+- And find any duplicate words.
+  Ex: In this case "sales" and "order" referring to same thing.
+- And check if there is any attribute there in those words
+
+Step - 4: (Conceptual Object Model)
+- Box all the objects.
+
++--------------+      +---------------+      +--------------+
+|              |      |               |      |              |
+|  Customer    |      | Shopping Cart |      |  Payment     |
+|              |      |               |      |              |
++--------------+      +---------------+      +--------------+
+
+
+
++--------------+      +---------------+       +-------------+
+|              |      |               |       |             |
+|    Item      |      |    Order      |       |    Email    |
+|              |      |               |       |             |
++--------------+      +---------------+       +-------------+
+
+
++--------------+
+|              |
+|   Address    |
+|              |
++--------------+
+- The benefit of diagram is to easier to show the relationship and dependability as we build this app.
