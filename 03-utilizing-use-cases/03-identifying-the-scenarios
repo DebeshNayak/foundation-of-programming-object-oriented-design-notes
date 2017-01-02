@@ -44,7 +44,7 @@ Extension: One or more items out of stock.
 Extension: Customer ayment method rejected.
   (a) ...
 ----------------
-* When writing scenario use Active Voice and omit needless words:
+* When writing scenario use "Active Voice" and omit needless words:
 Example - 1:
   Not this: The system is provided with the payment information and shipping information by the Customer.
   This: Customer provides payment and shipping information.

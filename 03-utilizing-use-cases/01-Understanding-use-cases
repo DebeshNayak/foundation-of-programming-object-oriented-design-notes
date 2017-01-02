@@ -6,7 +6,7 @@ Notes:
 
 Understanding use cases:
 1. Use Cases:
-  - Title: (what is the goal?)
+  i - Title: (what is the goal?)
     Ex:
         Register new member
         Transfer funds
@@ -14,14 +14,14 @@ Understanding use cases:
         Create new page
         Collect late payments
         Process accounts
-  - Actor: (who desires it?) (Any entity that interact with our system is called Actor)
+  ii - Actor: (who desires it?) (Any entity that interact with our system is called Actor)
     Ex:
         User
         Customer
         Member
         Administrator
         ACMESystem (external system)
-  - Scenario: (how is it accomplished?)
+  iii - Scenario: (how is it accomplished?)
 
     Ex: Scenario As Paragraph
     Title: Purchase items
@@ -74,4 +74,3 @@ Technology list:
   is wastage of time for less formalized/small team project.
 * There are use case diagram(only support) but forget about that diagram, because use case are
   almost written text.
-  

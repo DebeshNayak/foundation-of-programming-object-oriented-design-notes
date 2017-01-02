@@ -1,0 +1,16 @@
+1. Which of the following is not one of the essential parts of a use case?
+Ans: user story
+
+2. An actor in a use case is anything with behavior who lives outside of the system we are designing,
+  but has a goal they want to accomplish within.
+Ans: True
+
+3. When writing a scenario for a use case, you should focus on the actor's goal,
+  the user's intention using active voice, and finally writing succinct descriptions
+  of the scenario.
+Ans: True
+
+4. In a Knowledge Bas use case where title may include Sear Articles, View
+  Articles, Manage Users, Create Articles, and View Analytics. The actor Contributor
+  can be linked to which of the following title?
+Ans: Create Article title
