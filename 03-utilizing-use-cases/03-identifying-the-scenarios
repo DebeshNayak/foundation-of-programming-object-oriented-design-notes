@@ -1,0 +1,83 @@
+Identifying the Scenarios:
+Notes
+- When programming, a broad use case can usually be broken down into smaller scenarios.
+- A scenario is defined as a goal that an actor can accomplish with a single encounter.
+- Identifying the scenario may be as simple as looking at potential outcomes.
+- A user might:
+  - buy a product,
+  - check their balance
+  - contact the company
+  - or any other task
+  can be accomplished with a single visit through multiple steps.
+
+-----------------
+- User login to a system is not a scenario, user log in to a system to do something, that something is a scenario.
+* Identifying Scenarios:
+  - Emphasize the goal of one encounter.
+
+  Valid scenarios ex:
+    - Purchase items
+    - Create new document
+    - Balance accounts
+
+  - User focused goal having multiple encounter
+
+  Invalid scenarios ex:
+    - Log in to application
+    - Write book
+    - Merge organizations
+--------------
+Multiple Scenarios:(Sunny day use case)
+Ex:
+Title: Purchase items
+Actor: Customer
+Scenario:
+  - Customer reviews items in shopping cart.
+  - customer provides payment and shipping information.
+  - System validates payment information and responds with confirmation of order
+    and provides order number that Customer can use to check on order status.
+  - System will send Customer a confirmation of order details and tracking number in an email.
+Extension: One or more items out of stock.
+  (a) Customer removes out-of-stock item and continues
+  (b) Customer cancels entire order
+  ...
+Extension: Customer ayment method rejected.
+  (a) ...
+----------------
+* When writing scenario use Active Voice and omit needless words:
+Example - 1:
+  Not this: The system is provided with the payment information and shipping information by the Customer.
+  This: Customer provides payment and shipping information.
+Example - 2:
+  Not this: The system connects to the external payment process over HTTP and
+  uses JSON to submit the provided payment information to be validated, then waits
+  for a delegated callback response.
+  (This is looks like a pseudocode)
+  This: System validates payment information.
+----------------
+Focus on Intention:
+Ex:
+  Title: Purchase items
+  Actor: Customer
+
+  Scenario:
+    1. Customer chooses to enter the checkout process
+    2. Customer is shown a confirmation page for their order, allowing
+    them to change quantities, remove items, or cancel
+    3. Customer enters his/her shipping address.
+    4. System validates customer address
+    5. Customer selects payment method
+    6. System validates payment details
+    7. System creates order number for tracking
+    8. System displays confirmation screen to Customer
+    9. Email is sent to Customer with order details
+----------
+* When we come up with a fist set of goal or actors, we have to check the answers of few questions
+* This will prompt new goal scenarios or new actors
+* Use case Prompts:
+  1. Who performs system administration tasks?
+  2. Who manages users and security?
+  3. What happens if the system fails?
+  4. Is anyone looking at performance metrics or logs?
+---------
+* Once we have use case written we have to look for a use case diagram to tie that together.

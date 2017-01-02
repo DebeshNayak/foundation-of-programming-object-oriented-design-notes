@@ -1,0 +1,36 @@
+Identifying the actors:
+Notes:
+  - When defining a use case, you must first consider the potential actor.
+  - An actor is the third-party that will interact with your program.
+  - identifying the actors allow you to create scenarios surrounding specific use cases.
+  - Learning how to identify the most common actors for your program can help you
+    find potential problems before finishing development.
+
+------------
+Example:
+Payroll Application:
+Actors:
+  1. Payroll Administrator
+  2. Employee
+  3. Manager
+  4. ACMECorp Check Printing
+  5. HR System
+---------------
+Identifying Actors:
+  1. External Systems / organizations
+    - External data sources, web services, other corporate apps, tax reporting, backup systems
+  2. Roles / Security Groups
+    - Visitor, member, administrator, owner
+  3. Job Titles / Departments
+    - Manager, Payroll Administrator, Production Staff, Executive Team, Accounting
+
+  - If there are having multiple actors:
+    Ex:
+         Expense Approval System
+    - Payroll Administrator, HR Staff, janitorial,
+      Part-Time Staff, Executive Team, Production,
+      Managers, Contractors, Marketing
+    - Could be converted to: Requester, Approver
+    - So in this case there are
+        * Primary actors: who initiate the use case (Requester)
+        * Supporting actors: Anyone else (Approver)

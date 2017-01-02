@@ -1,0 +1,77 @@
+Notes:
+- After determining what an application must do, it is equally important to define
+  how users access those functions.
+- Understanding use cases allows you to map out, in laymen's terms, how a user
+  will access functions of your application.
+
+Understanding use cases:
+1. Use Cases:
+  - Title: (what is the goal?)
+    Ex:
+        Register new member
+        Transfer funds
+        purchase items
+        Create new page
+        Collect late payments
+        Process accounts
+  - Actor: (who desires it?) (Any entity that interact with our system is called Actor)
+    Ex:
+        User
+        Customer
+        Member
+        Administrator
+        ACMESystem (external system)
+  - Scenario: (how is it accomplished?)
+
+    Ex: Scenario As Paragraph
+    Title: Purchase items
+    Actor: Customer
+
+    Scenario: Customer reviews items in shopping card. Customer provides payment and shipping information.
+      System validates payment information and responds with confirmation of order and provides order
+      number that Customer can use to check on order status. System will send Customer a confirmation of
+      order details and tracking number in an email.
+-----------------------
+    Ex: Scenario As Steps:
+    Title: Purchase itmes
+    Actor: Customer
+
+    Scenario:
+    1. Customer chooses to enter the checkout process
+    2. Customer is shown a confirmation page for the order, allowing them to change
+      quantities, remove items, or cancel
+    3. Customer enters his/her shipping address
+    4. System validates the customer address
+    5. Customer selects a payment method
+    6. System validates the payment details
+    7. System creates an order number that can be used for tracking
+    8. System displays a confirmation screen to the Customer
+    9. Email is sent to the Customer with order details
+
+    Extension: Describe steps for out-of-stock situations
+    Extension: Describe steps for order never finalized
+
+    Precondition: Customer has added at least one item to shopping cart
+
+----------------------
+Use case: Scenario Additional details
+Title: Purchase items
+Actor: Customer
+Secondary actor:
+Scenario:
+Description:
+Scope:
+Level:
+Extensions:
+Extensions:
+Precondition:
+Postcondition:
+Stakeholders:
+Technology list:
+----------------------
+* This should be done as quick as you can, so that we can invest time in other phase
+* One or two day of use case making in any iteration is desirable, more than that
+  is wastage of time for less formalized/small team project.
+* There are use case diagram(only support) but forget about that diagram, because use case are
+  almost written text.
+  
