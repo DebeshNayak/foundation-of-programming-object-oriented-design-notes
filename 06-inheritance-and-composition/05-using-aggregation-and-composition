@@ -1,0 +1,37 @@
+Using aggregation and composition:
+Notes:
+- Aggregation is when one object contains another object, such as how a car contains a
+  steering wheel.
+- In contrast, composition is a more specific form of aggregation.
+- It indicates that one objects owns another object.
+- We can use aggregation and composition to show relational and ownership information among classes.
+-------------
+* Aggregation describes a "HAS A" relationship
+Ex:
+  - A customer has a address.
+  - A car has a engine.
+  - A bank has many bank accounts.
+  - A university has many students.
+------------
+In UML Aggregation:
+- Aggregation has the symbol unfilled diamond symbol towards the owner object.
+
++-----------+               +-----------+
+| Classroom |<>-------------| Student   |
++-----------+ 1            *+-----------+
+              aggregation
+  - Classroom has a students
+-------------
+* Composition is a more specific type of aggregation, and it implies ownership
++-----------+               +-----------+
+| Document  |<>-------------| Page      |
++-----------+ 1         1..*+-----------+
+                composition
+              (implies ownership)
+              
+  - Document object composed of(made up of) page objects
+  - We can call it "Document object has a page object"
+  - When the document object deleted, all the associated page object deleted too.
+- When the owning object destroyed so are the contained object.
+- So in this case we need to write constructor and destructor to constructing and
+  destroying internal objects.
