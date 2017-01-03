@@ -1,0 +1,36 @@
+Using abstract classes:
+Notes:
+- In an abstract class, you focus on the key qualities of the class and discard
+  the qualities that are not important.
+- Abstract classes can be used to share behaviors with other classes.
+--------
+- What happen when a class is written and never get instantiated.
+         +--------------------+
+         |     BankAccount    | abstract class (class that can't be instantiated.)
+         +--------------------+
+         |accountName         |
+         |balance             |
+         +--------------------+
+         |deposit()           |
+         |withdraw()          |
++------> |                    | <------------+
+|        +---------+----------+              |
+|                    ^                       |
+|                    |                       |
+|                    |                       |
++-+--------------+    ++----------------+    +-+---------------+
+| CheckingAccount|    | SavingAccount   |    |InvestmentAccount|
++----------------+    +-----------------+    +-----------------+
+|(has everything |    |(has everything  |    |(has everything  | Concrete Class (class that can be instantiated)
+|from BankAccount)    |from BankAccount)|    |from BankAccount)|
+|lastCheckNum    |    |interestRate     |    |withdraw()       |
++----------------+    +-----------------+    +-----------------+
+
+-----------
+* Here the BankAccount class is never got instantiated.
+* In that situation we can me the "BankAccount" class as abstract class.
+* Abstract class exists to be inherited and never instantiated.
+* And this class's variable, method all will be inherited.
+Example of abstract class declaration in java:
+abstract class BankAccount { ...
+Public MustInherit Class BankAccount ...
