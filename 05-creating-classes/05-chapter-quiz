@@ -1,0 +1,13 @@
+1. What do the plus sign and minus sign represent in a UML class diagram?
+Ans: minus means private to the class and plus means public to the other classes
+
+* In java, private field in the parent class is inherited to the child class but
+  child class can't directly access the private field. But by using public/default/protected
+  accessor method the child class can access the value of the private field.
+
+2. _________ can make sure that any variables belonging to an object are immediately
+  set to the right values as soon as the object is created.
+Ans: constructor
+
+3. A method or a variable that is shared across all objects in a class is called?
+Ans: static, class-level, shared
