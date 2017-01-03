@@ -1,0 +1,77 @@
+Using Interface:
+Notes:
+- An interface (also known as a protocol) is an inventory, or list, of method signatures
+  that are similar in nature to a class, but do not have any functionality, behavior,
+  or actual code written into them.
+-------------
+- Interface is a list of method signature.
+-------------
+* Defining Interface Contracts:
+Example in Java:
+
+interface Printable {
+
+  // method signatures
+  void print();
+  void printToPDF(String filename);
+
+}
+---------------
+Implementing Interfaces:
+- Implementing interfaces is similar to "signing a contract".
+- So we have to define the declared method of the interface in the implemented class.
+- If not then we got a compile error.
+- The more classes use the same interface the better.
+
+class MyClass implements Printable {
+
+  // method bodies
+  public void print(){
+    // provide implementation
+  }
+
+  public void printToPDF(String filename){
+    // provide implementation
+  }
+
+  // additional functinality...
+}
+----------------
+Advantage is that:
+- Many classes use same interface, so we can use object with
+  interface without knowing how those objects work. as the method signature is same signature.
+
+Example:
+// somtime later
+while (genericObject in listOfObjects){
+  if( genericObject instanceOf Printable){
+    // if it implements the interface, we can use it
+    genericObject.print();
+  }
+}
+---------------
+Interface in UML:
+- We represent interfaces in the same class style boxes
+- With an interface tag with surrounding angle quotes
+- Then list the public signature
+- Dotted arrow line from implemented class to the interface.
+
++----------------+
+|  <<Interface>> |
+|    Printable   |
++----------------+
+|print ()        |
+|printToPDF ()   |
++----------------+
+        ^
+        |
+        |implementing
++----------------+
+|    MyClass     |
++----------------+
+|                |
+|                |
++----------------+
+----------------
+ - Program to an interface, not an implementation. - Design Patterns, 1995
+ - Because it is the developer choice to provide the implementation details.
