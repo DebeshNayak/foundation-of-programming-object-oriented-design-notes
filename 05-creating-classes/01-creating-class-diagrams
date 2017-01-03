@@ -1,0 +1,63 @@
+Creating class diagrams:
+Notes:
+- After you have finalized relationships and the number of classes needed for programming
+  your application, it is time to start creating class diagrams.
+- Here we can learn how to effectively diagram classes to reveal the primary attributes
+  and operations of each class.
+- This step happens just before programming the actual code, so language use becomes a priority.
+------------------
+Class Diagram:
++------------------+
+|     Class name   |
+|                  |
++------------------+
+|                  |
+|     Attributes   |
+|                  |
++------------------+
+|                  |
+|     Operations   |
+|                  |
++------------------+
+
+- Class name uppercase singular letter.
+Ex: Employee, Image, Product
+
+- Attributes are not yet decided.
+- But it should be named as Pascal Case, lower case first letter, upper case next attached word.
+Ex: name, isActive, launchDate, itemNumber
+- Attributes also attached with data types separated by colon
+
+- Operation should be taken from the responsibility of the CRC card
+- Naming convention Pascal Case
+Ex: getName, setActive, getProductDetails, displayProduct, formatProductDetails
+- We can add parameter type within parenthesis
+- And return type after it, separated by colon
+
+- Sign before the attribute and operation determine visibility
+Ex: + : public
+    - : private
+
+- We can add note to the class diagram
+
++------------------------------+
+|                              |
+|          Product             |
+|                              |
++------------------------------+
+|- name: String = "New Product"|
+|- isActive: Boolean           |
+|- launchDate: Date            |
+|- itemNumber: Integer         |
+|                              |
++------------------------------+
+|+ getName (): String          |
+|+ setActive (Boolean)         |
+|+ getProductDetails (): String|
+|+ DisplayProduct ()           |
+|- formatProduct details (): S |
+|                              |
++------------------------------+
+
+-----------------
+- Avoid building plain data structures like database design.
