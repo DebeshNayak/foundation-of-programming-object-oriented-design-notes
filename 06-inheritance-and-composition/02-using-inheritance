@@ -1,0 +1,25 @@
+Using Inheritance:
+Notes:
+- Inheritance lets yo create a new class that is based on an existing class.
+- Using inheritance can save you the trouble and time involved with starting from scratch.
+-------
+Example of Inheritance across multiple language:
+
+Java    public class Album extends product { ...
+C#      public class Album : Product { ...
+VB.NET  public Class Album Inherits Product ...
+Ruby    class Album < Product ...
+C++     class Album : public Product { ...
+Obj-C   @interface Album : Product { ...
+
+----------------
+* Overriding method in some language require to specify keyword.
+----------------
+Calling a method in the super / parent / base class:
+
+Java    super.doSomething();
+C#      base.doSomething();
+VB.NET  MyBase.doSomething()
+Ruby    super do_something
+Obj-C   [super someMethod];
+C++     NamedBaseClass::doSomething();
