@@ -1,0 +1,20 @@
+Using UML Tools:
+Notes:
+- Good old pen and paper is often perfectly adequate for UML programming diagram.
+- But you may want to also consider electronic approaches.
+- There are plenty of commercial options to choose from, which can be categorized into
+  tools that are purely for creating diagram and tools that also crate the associated code.
+--------------------
+UML Tools:
+1. Diagramming Tools
+  - Visio, OmniGraffle
+2. Web-based Diagramming
+  - gliffy.com, creately.com, lucidchart.com
+3. Programming Tools: IDE-based
+  - Visual Studio, Eclipse with UMLTools
+4. Commercial Products
+  - Altova UModel, Sparx Enterprise Architect, Visual Pradigm
+5. Open-Source
+  - ArgoUML, Dia
+--------------------
+Wiki Link: http://goo.gl/YAuOY : List of Unified Modeling Language tools

@@ -1,0 +1,55 @@
+Creating sequence diagrams:
+Notes:
+- Many diagrams in object-oriented design and programming relate to the application
+  and system as a whole, but sometimes you want to drill down to how specific object
+  in the system interact with one another.
+- This is where the Sequence diagram comes in.
+- The idea is to map out the basics of a particular scenario (rather than cover
+  every possible outcome) and use the diagram to make sure you have the right setup
+  of classes.
+--------
+- Conceptual model, use-case diagram, class diagram are static diagram.
+- The sequence diagram show how the objects changed and communicate with each other.
+
+- The name of the object will be written in the top within a box
+- Then draw the below life line below those boxes.
+- Then start the interaction between those objects using regular arrow.
+- In the interaction we can specify the method name with parameter list.
+- Display the response using dotted arrow.
+- Solid boxes in the life line are called activation boxes or method call boxes.
+  These are processing being done in response.
+- If a process might happen multiple time then we can surround them with a frame.
+---------
+- These are the thinking tool to think through the process
+** No need to diagram every single part of the application.
+- These are for sketching out the situation that is not clear already.
+- Who need to process in response to what, so that we can realize that a new class
+  can be created somewhere. And we can change our class diagram.
+
++-----------+          +------------+           +------------+
+|a Customer |          |a Cart      |           | :Order     |
++-----+-----+          +------+-----+           +-----+------+
+      |     checkout          |                       |
+      +---------------------> |                       |
+      |                       |    createNewOrder     |
+      |                       +---------------------->|
+      |                       |  addItem(item, quantity)
+      |                       +---------------------->|
+      |                       |                      +-+
+      |                       |   itemTotal          +-+
+      |                       | <---------------------+
+      |                       |  calculateDiscount    |
+      |                       +---------------------->|
+      |                       |   finalizeSale        |
+      |                       +---------------------->|
+      |                       |      total            |        +---------------+
+      | <---------------------------------------------+        |   Payment     |
+      |    submitPayment      |                       |        |               |
+      +---------------------------------------------->+        +-------+-------+
+      |                       |                       |  createPayment |
+      |                       |                       +--------------> |
+      |                       |                       |   results      |
+      |                       |    results            | <--------------+
+      | <---------------------------------------------+                |
+      |                       |                       |                X
+      +                       +                       +

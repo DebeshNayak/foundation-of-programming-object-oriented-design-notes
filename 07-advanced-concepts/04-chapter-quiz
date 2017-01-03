@@ -1,0 +1,12 @@
+1. Sequence diagrams represent the lifetime of an object and how objects interact
+  with one another. They do not describe the entire system but just one particular part of it.
+Ans: True
+
+2. Which of the following is a UML diagram?
+Ans:
+Sequence Diagram
+Class Diagram
+Use Case Diagram
+
+3. Microsoft Visio can help you diagram/draw UML diagrams but cannot help you generate code from a UML diagram.
+Ans: True

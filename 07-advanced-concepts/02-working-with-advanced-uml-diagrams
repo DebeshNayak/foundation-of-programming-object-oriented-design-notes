@@ -1,0 +1,26 @@
+Working with advanced UML diagrams:
+Notes:
+- State machine diagrams don't concentrate on the programming process but rather
+  on a sing object,
+  with the aim being to track the way it changes state at various times.
+- Meanwhile, an activity diagram is a form of flowchart that tracks the decisions
+  and transitions in part of a system.
+- One variant of the activity diagram splits different classes in a visual style
+  commonly know as a swim lane.
+-------------------
+UML Diagrams:
+1. Class Diagram
+2. Use Case Diagram
+3. Object Diagram
+4. Sequence Diagram
+5. State Machine Diagram: change of state of object over time
+6. Activity Diagram: closes thing to classic flow chat diagram, detail the steps
+                      the transition and decision that occur as flow through different part of a system.
+7. Deployment Diagram
+8. Package Diagram
+9. Component Diagram
+10. Profile Diagram
+11. Communication Diagram
+12. Timing Diagram
+13. composite Structure Diagram
+14. Interaction Overview Diagram
