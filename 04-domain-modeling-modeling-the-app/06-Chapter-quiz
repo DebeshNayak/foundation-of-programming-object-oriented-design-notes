@@ -1,0 +1,15 @@
+1. Once you have drawn up some use cases or user stories, the next thing
+  you can do is create a _________ of your system.
+Ans: Conceptual model
+
+2. From the collection of the use cases, the user stories, and the other written
+  requirements, you can extract your ________. Then you turn these objects into a _______.
+Ans: object; conceptual model
+
+3. Conceptual object modeling involves identifying the relationship between
+  objects. This is equivalent to database data modeling.
+Ans: False
+
+4. The responsibilities and behavior of the conceptual objects will become the ________ in
+  the objects.
+Ans: methods
