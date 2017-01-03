@@ -1,0 +1,15 @@
+1. When you want to change one of the behaviors you inherit from a superclass and
+  replace the implementation of a method defined in that superclass, that is called ________?
+Ans: overriding
+
+2. If you want to call a method from the subclass that was originally defined in
+  the superclass, what keyword(s) would you use if your programming language is C#?
+Ans: base
+
+3. If a class purely exists for the sake of being inherited, what is this class called?
+Ans: abstract
+
+4. In C#, if something is just a list of method signatures and is very
+similar to a class but has no actual functionality, no actual code, and no behavior,
+what is it called?
+Ans: interface
