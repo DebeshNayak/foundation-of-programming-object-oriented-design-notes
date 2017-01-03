@@ -1,0 +1,38 @@
+Example: the memento pattern:
+Notes:
+- The Memento design pattern is a simple but creative programming approach to undoing
+  a change to an object.
+- It involves creating an object with the memento class that simply details how to go back to
+  the state before the change was made.
+- The solution works because it's set up in a way that means the object still manages itself.
+--------------
+Memento Design Pattern:
+- Way of managing change.
+- Handles "undo" in an object
+- Does not violate encapsulation
+
++-----------------+
+|   Originator    |
++-----------------+
+|                 |
+|  Original state |
+|                 |
++-----------------+
+- This is the object that we will be changed or undo.
+-----------
++-----------------+
+|    Caretaker    |
++-----------------+
+|                 |
+|                 |
++-----------------+
+- When and why the originator changed and reverse its state.
+-----------
+- Caretaker request Originator to save its state.
+- The originator create "memonto" object, which is a simple object which details
+  the important part of the originator, the information needed to return to a
+  particular state and bundle that information in momento and return back to the "Caretaker" object.
+- The Caretaker do nothing but store that momento.
+- The Caretake or other class again ask for another momento through change class.
+- If we want to revert to a particular state then the Caretaker hands back the
+  momento object to the Originator and ask it to restore itself

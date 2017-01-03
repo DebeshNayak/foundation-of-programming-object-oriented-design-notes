@@ -1,0 +1,13 @@
+1. A design pattern that is specifically concerned with communication between object as the program is running is called?
+Ans: Behavioral Pattern
+
+2. A singleton design pattern _____.
+Ans:
+- is needed when we want to create one object of a class and no more instances of that class
+- is the ability to create a class that can only have one instance
+- is the ability to create a class that provides just one way to get to it
+
+3. The Momento object is what gets created when the CareTaker class requests that
+  the Originator class save itself. The Memento object details the important parts
+  of the Originator class and the information needed to return to a particular state.
+Ans: true

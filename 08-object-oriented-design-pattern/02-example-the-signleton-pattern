@@ -1,0 +1,48 @@
+Example: the singleton pattern
+Notes:
+- The Singleton design pattern is a programming approach to the problem of making sure you
+  only ever have one object of a particular class at any time.
+- The approach involves effectively hiding the object so that it appears to not exist until the first time it is called.
+- On the second and subsequent times it's called, the object is returned with no need
+  to create it again.
+----------------
+* Singleton:
+- We want to ensure a class only has one instance.
+- We want one way of accessing it.
+- The implementation can vary across languages.
+
+----------------
+Implementing a singleton in Java:
+
+public class MySingleton {
+
+  // placeholder for current singleton object
+  private static MySingleton __me = null;
+
+  // private constructor - now no other object can instantiate
+  private MySingleTon(){}
+
+  // this is hwo you ask for the singleton
+  public static MySingleton getInstance() {
+    // do I exist?
+    if( __me == null ){
+      // if not, instantiate and store
+      __me = new MySingleton();
+    }
+    return __me;
+  }
+
+  // additional functionality
+  public someMethod() { //... }
+}
+-------------
+* Here we are using a technique called lazy instantiation
+-------
+// ask for the singleton
+MySingleton single = MySingleton.getInstance();
+
+// use it
+single.someMethod();
+
+// or even just call directly
+MySingleton.getInstance().someMethod();

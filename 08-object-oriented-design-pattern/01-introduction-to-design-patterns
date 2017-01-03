@@ -1,0 +1,51 @@
+Introduction to design pattern:
+Notes:
+- Design patterns are pre-written solutions for specific problems in object-oriented programming.
+- It's key to remember these patterns are meant to address procedural issues rather
+  than the intended usage.
+- For example, a design pattern wouldn't answer the question of how to make a payroll system,
+  but rather a question such as how to undo an object being automatically changed.
+-----------
+- Best practices to accomplishes a result
+- Design Patterns: Elements of Reusable Object-Oriented Software
+  by Erich Gamma, Richard Helf, Ralph Johnson, John Vlissides (Gang of Four book)
+  - This book contains 23 design patter split into 3 groups
+----------
+- Creational Patterns:
+  * Abstract Factory
+  * Builder
+  * Factory Method
+  * Prototype
+  * Singleton
+
+  - These are approaches that deal with the creation of objects.
+  - Instead of you instantiating all objects very specifically and very explicitly,
+    they give you more flexibility in how the objects are actually created.
+-----------
+- Structural Patterns:
+  * Adapter
+  * Bridge
+  * Composite
+  * Decorator
+  * Facade
+  * Flyweight
+  * Proxy
+
+  - These dealt more with how classes are actually designed,
+  - How things like inheritance and composition and aggregation can be used to
+    provide extra functionality.
+-----------
+Behavioral Patterns
+  * Chain of responsibility
+  * Command
+  * Interpreter
+  * Iterator
+  * Mediator
+  * Memento
+  * Observer
+  * State
+  * Strategy
+  * Template method
+  * Visitor
+
+  - Deals with communication between object as the programming is running

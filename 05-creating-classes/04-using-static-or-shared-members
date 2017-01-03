@@ -38,7 +38,7 @@ Example:
 ---------------
 Creating Static Variable:
 
-Jav
+Java
 public class SavingsAccount {
   // instance variables
   public String accountNumber;
@@ -95,6 +95,10 @@ public class SavingsAccount {
 
   // other code omitted
 }
+
+And the static method can be called as follows:
+
+SavingsAccount.setInterestRate(0.9);
 -----------
 Showing Static member in UML:
 - Static variable and member are shown underline in UML diagram.

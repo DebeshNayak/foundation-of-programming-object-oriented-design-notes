@@ -33,7 +33,7 @@ Notes:
       +---------------------> |                       |
       |                       |    createNewOrder     |
       |                       +---------------------->|
-      |                       |  addItem(item, quantity)
+      |                       |addItem(item, quantity)|
       |                       +---------------------->|
       |                       |                      +-+
       |                       |   itemTotal          +-+
