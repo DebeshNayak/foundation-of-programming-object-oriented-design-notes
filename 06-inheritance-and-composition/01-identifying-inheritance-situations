@@ -1,0 +1,112 @@
+Identifying inheritance situation:
+Notes:
+- Object-orientation has four key concepts, and inheritance is one of them.
+- Inheritance brings the idea of relationship and connections, such as class and
+  subclass or child-class into programming languages.
+----------------
+- Although we think we don't use inheritance but in OOPs language we always use inheritance.
+- The best way of identifying inheritance situation is in two words: "is a"
+----------------
+* Inheritance describes an "is a" relationship.
+* Inheritance save us time so that we don't have to re-invent the wheel
+Example:
+A car "is a" vehicle.
+A bus "is a" vehicle.
+A car "is a" bus. (x)
+
+A employee "is a" person.
+A customer "is a" person.
+A customer "is a" shopping cart. (x)
+
+A checking account "is a" kind of bank account.
+A savings account "is a" type of bank account.
+
+A Bentley Continental GT "is a" car "is a" vehicle.
+A Pomeranian "is a" dob "is a" mammal "is a" animal.
+--------------
+Identifying inheritance:
+           +--------------------+
+           |     BankAccount    | (Super class, parent class)
+           +--------------------+
+           |accountName         |
+           |balance             |
+           +--------------------+
+           |deposit()           |
+           |withdraw()          |
+  +------> |                    | <------------+
+  |        +---------+----------+              |
+  |                    ^                       |
+  |                    |                       |
+  |                    |                       |
++-+--------------+    ++----------------+    +-+---------------+
+| CheckingAccount|    | SavingAccount   |    |InvestmentAccount| (Sub+classes, child class)
++----------------+    +-----------------+    +-----------------+
+|(has everything |    |(has everything  |    |(has everything  |
+|from BankAccount)    |from BankAccount)|    |from BankAccount)|
+|lastCheckNum    |    |interestRate     |    |withdraw()       |overriding
++----------------+    +-----------------+    +-----------------+
+
+
+- Some language allow to replace the method of super-class, which is called method overriding.
+---------------------
+* Try to find out what should be the super class of this class.
+* Strip out the similar behavior from the child class and create a parent class.
+
+Example:
+           +--------------------+
+           |     Product        |
+           +--------------------+
+           |title               |
+           |price               |
+           +--------------------+
+           |purchase()          |
+           |download()          |
+  +------> |                    | <------------+
+  |        +---------+----------+              |
+  |                    ^                       |
+  |                    |                       |
+  |                    |                       |
++-+--------------+    +-----------------+    +-----------------+
+| Album          |    |   Book          |    |    Movie        |
++----------------+    +-----------------+    +-----------------+
+| artist         |    | author          |    | director        |
++----------------+    +-----------------+    +-----------------+
+|                |    |                 |    |                 |
++----------------+    +-----------------+    +-----------------+
+
+--------------
+Framework inheritance example:
+
+* All the OOPs language use inheritance substantially because they use generic extensible
+  framework rather than writing a specific app.
+* Everything in Java inherited from Object class.
+* So in Java we always inheriting from any class.
+Example in Java:
++-------------+
+| Object      |
++------+------+
+       ^
+       |
++------+------+
+| Component   |
++------+------+
+       ^
+       |
++------+------+
+|  Container  |
++------+------+
+       ^
+       |
++------+------+
+|  Window     |
++------+------+
+       ^
+       |
++------+------+
+| Dialog      |
++------+------+
+       ^
+       |
++------+------+
+|FileDialog   |
++-------------+
