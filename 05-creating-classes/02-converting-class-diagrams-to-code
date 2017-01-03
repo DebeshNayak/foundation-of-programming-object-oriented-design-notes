@@ -1,0 +1,38 @@
+Converting Class Diagram to Code:
+Notes:
+- Class diagram are representations of hierarchical and relational data among object.
+- Here we will work on converting UML class diagram to code in programming language.
+-------
+Class Diagram:
++--------------------------------+
+|         Spaceship              |
+|                                |
++--------------------------------+
+|+ name: String                  |
+|- shieldStrength: Integer       |
+|                                |
+|                                |
++--------------------------------+
+|- fire(): String                |
+|+ reduceShields (Integer)       |
+|                                |
++--------------------------------+
+
+Simple class in Java:
+
+public class Spaceship {
+  // instance variables
+  public String name;
+  private int shieldStrenght;
+
+  // methods
+  public String fire() {
+    return "Boom!";
+  }
+
+  public void reduceShields(int amount){
+    shieldStrength -= amount;
+  }
+}
+----------------
+- The process we come across are common all across language, but the implementation are different
