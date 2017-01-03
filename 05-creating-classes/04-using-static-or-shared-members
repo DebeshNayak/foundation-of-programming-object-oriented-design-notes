@@ -1,0 +1,100 @@
+Using static or shared members:
+Notes:
+- Rather than them each having their own set of attributes and behaviors, static
+  or shared members of objects in a class share attributes, variables, and behaviors.
+- In this tutorial we learn about step-by-step processes and guidelines for using
+  static or shared members on all objects in a class.
+-------
+- Up to now we discussed about instance member of the classes, where every object we
+  initialize have their own unique copy of all the attribute and all the behavior we defined.
+
+- But we can create static or shared members, meaning a variable or a method that
+  is shared across all objects in that class.
+-------
+Using static and shared member:
+
+Example:
+  If we define the interest rate of a saving account class then it should not be
+  initialized in every object, it should be initialize as static variable.
+
+* This static is also called shared or class level variable (or method).
+
++--------------------+
+|                    |           +-------------------------------------------------+
+|   SavingAccount    |           |                     0.85%  static, shared, class-level
++--------------------+           |                                                 |
+| accountNumber      |           | +-----------+  +-----------+   +-----------+    |
+| balance            |           | | A7652     |  |B2311      |   |S2314      |    |
+| interestRate static|           | | $500      |  |$5000      |   |$7500      |    |
+|                    |           | |           |  |           |   |           |    |
+|                    |           | |           |  |           |   |           |    |
++--------------------+           | | deposit() |  |deposit()  |   |deposit()  |    |
+| deposit()          |           | | withdraw()|  |withdraw() |   |withdraw() |    |
+| withdraw()         |           | |           |  |           |   |           |    |
+|                    |           | +-----------+  +-----------+   +-----------+    |
++--------------------+           |    joeAcct         aliceAcct    samAcct         |
+                                 |                                                 |
+                                 +-------------------------------------------------+
+---------------
+Creating Static Variable:
+
+Jav
+public class SavingsAccount {
+  // instance variables
+  public String accountNumber;
+  private Money blalance;
+
+  // static variables
+  public static float interestRate;
+
+  // other code omitted
+}
+
+# Ruby - class level variables
+@@interestRate
+
+- Static variable is not means fixed, they can be changed, but one variable across
+  multiple objects of that class.
+
+- When we access a instance level variable we use the object name before it:
+
+Example in Java:
+joeAcc.accountNumber
+aliceAcct.accountNumber
+
+- But when we access a class level variable we have to use the class name before it:
+
+Example in Java:
+SavingsAccount.interestRate = .85;
+
+- We can set the value of static variable before creating any object of this class
+
+--------------
+
+Creating Static Method:
+- Method that exist in class level not in instance level.
+- The static method can access only static variable, not the instance level variable.
+- We can also make the static variable visibility private and get and set the value
+  of the static variable using static method.
+
+Example in Java:
+public class SavingsAccount {
+  // instance variables omitted
+
+  // changed the static variable to private
+  private static float interestRate;
+
+  // public static methods
+  public static setInterestRate(float r){
+    // add code to log any change
+    interestRate = r;
+  }
+  public static getInterestRate(){
+    return interestRate;
+  }
+
+  // other code omitted
+}
+-----------
+Showing Static member in UML:
+- Static variable and member are shown underline in UML diagram.
