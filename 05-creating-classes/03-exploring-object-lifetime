@@ -1,0 +1,142 @@
+Exploring object lifetime:
+Notes:
+- Both a class's and an object's lifetime spans from the time of its creation until
+  its destruction.
+- In this we learn about object lifetime, constructors and destructors, from the
+  use of the New keyword to the calling up of a finalizer.
+--------------
+* Instantiation:
+  - To create an object
+
+Example:
+Java        Customer fred = new Customer();
+C#          Customer fred = new Customer();
+VB.NET      Dim fred As New Customer
+Ruby        fred = Customer.new
+C++         Customer *fred = new Customer();
+Objective-C Customer *fred = [[Customer alloc] init];
+
+  - We can do something while instantiation using constructor.
+--------------
+Constructors:
+  - It exist to construct the object.
+  - It will be called while initializing the object.
+
+Example:
+  +----------------------+
+  |     Spaceship        |
+  +----------------------+
+  |name: String          |
+  |shieldStrenght: Intege|
+  +----------------------+
+  |fire(): String        |
+  |reduceShields(Integer)|
+  +----------------------+
+
+* While we instantiating object:
+
+  Spaceship excelsior = new spaceship();
+
+  - At that time the object is initialized as follows:
+
+   object: excelsior
+ +-------------------+
+ | name: null        |
+ | shieldStrength: 0 |
+ +-------------------+
+* So if we want to initialize with a proper value then we need to use constructor.
+** Constructor make sure that any variable belonging to that object are immediately
+  set to the right value as soon as the object is created.
+* In Java, C# and C++ we create constructor by creating a method of the same name as the class.
+* There is no return type to a constructor.
+
+Constructor Example that takes no argument:
+
+public class Spaceship {
+  // instance variables
+  public String name;
+  private int shieldStrength;
+
+  // constructor method
+  public Spaceship(){
+    name = "Unnamed ship";
+    shieldStrength = 100;
+  }
+
+  // other methods omitted
+}
+
+Spaceship excelsior = new Spaceship();
+
+object: excelsior
++-------------------+
+| name:Unnamed ship |
+| shieldStrength:100|
++-------------------+
+
+Constructor in UML:
+
++----------------------+
+|     Spaceship        |
++----------------------+
+|name: String          |
+|shieldStrenght: Intege|
++----------------------+
+|Spaceship()           |
+|                      |
+|fire(): String        |
+|reduceShields(Integer)|
++----------------------+
+
+**********************
+Multiple Constructor:
+* In some language we can create multiple constructor by overloading our constructor method.
+Example:
+public class Spaceship {
+  // instance variables
+  public String name;
+  private int shieldStrength;
+
+  // constructor method
+  public Spaceship(){
+    name = "Unnamed ship";
+    shieldStrength = 100;
+  }
+  //overloaded constructor
+  public Spaceship(String n){
+    name = n;
+    shieldStrength = 200;
+  }
+
+  // other methods omitted
+}
+
+Spaceship excelsio = new Spaceship ("Excelsio 2");
+
+  object: excelsior
++-------------------+
+| name: Excelsior 2 |
+| shieldStrength:200|
++-------------------+
+
+Multiple Constructor in UML:
+
++----------------------+
+|     Spaceship        |
++----------------------+
+|name: String          |
+|shieldStrenght: Intege|
++----------------------+
+|Spaceship()           |
+|Spaceship(String)     |
+|                      |
+|fire(): String        |
+|reduceShields(Integer)|
++----------------------+
+
+---------------
+Destructors/Finalizers:
+* Called when an object is being deleted / deallocated / released.
+* A place to put some code that is  automatically be called when the object is destroyed.
+* Not needed as often as constructor
+* Use for release resources: document, database
