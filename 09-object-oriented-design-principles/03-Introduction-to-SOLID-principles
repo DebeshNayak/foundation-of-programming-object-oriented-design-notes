@@ -19,7 +19,7 @@ Notes:
   Example: Inheritance
 
          +--------------------+
-         |     BankAccount    | 
+         |     BankAccount    |
          +--------------------+
          |accountName         |
          |balance             |
@@ -39,7 +39,7 @@ Notes:
 ------------------
 3. Liskov Substitution principle:
   - Derived classes must be substitutable for their base classes
-  - Extention of inheritance: Means what the base class does could be done by the child class
+  - Extension of inheritance: Means what the base class does could be done by the child class
 ------------------
 4. Interface segregation principle:
   - Multiple specific interfaces are better than one general purpose interface.

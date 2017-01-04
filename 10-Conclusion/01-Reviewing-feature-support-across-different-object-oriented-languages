@@ -1,0 +1,29 @@
+Reviewing feature support across different object-oriented languages:
+Notes:
+- Interfaces are supported by multiple languages, but its important to consider
+  whether the language you are using supports multiple inheritance.
+- Depending on the features you need for programming, different languages will
+  offer different benefits.
+----------------------
+- General OO Design Pattern and Practices
+
++-----------------------------------------------------------------------------------+
+|Languag|Inheritan|Typing    |Call to     |Private    |Abstract      |Interfaces    |
+|e      |ce       |          |super       |Methods    |Classes       |              |
++-----------------------------------------------------------------------------------+
+|Java   |Single   |static    |super       |Yes        |Yes           |Yes           |
++-----------------------------------------------------------------------------------+
+|C#     |Single   |static    |base        |Yes        |Yes           |Yes           |
++-----------------------------------------------------------------------------------+
+|VB.NET |Single   |static    |MyBase      |Yes        |Yes           |Yes           |
++-----------------------------------------------------------------------------------+
+|Obj-C  |Single   |static/   |super       |No         |No            |Protocols     |
+|       |         |dynamic   |            |           |              |              |
++-----------------------------------------------------------------------------------+
+|C++    |Multiple |static    |name of cla |Yes        |Yes           |Abstract      |
+|       |         |          |ss::        |           |              |Class         |
++-----------------------------------------------------------------------------------+
+|Ruby   |Mix-ins  |dynamic   |super       |Yes        |n/a           |n/a           |
++-----------------------------------------------------------------------------------+
+|JScript|Prototype|dynamic   |n/a         |Yes        |n/a           |n/a           |
++-------+---------+----------+------------+-----------+--------------+--------------|

@@ -1,0 +1,22 @@
+Additional Resource:
+Notes:
+- This online courses offer a practical introduction to oo design, but there
+  is much more information on the topic.
+---------------
+Books name:
+1. Initial part of software requirement:
+  - Software Requirements by Karl Wiegers
+      - It is for Consulting Company (we don't know about the client's business)
+2. For the world of use cases:
+  - Writing Effective Use Cases by Alistair Cockburn
+      - Terrific example and common mistake to watch out for
+3. For more concise user story format
+  - User Stories Applied for Agile Software Development by Mike Cohn
+4. UML Design
+  - UML Distilled by Martin Fowler
+    - Short book and cover all the UML
+5. Design Pattern
+  - Head First Design Pattern
+    - Example given are in Java
+----------
+Begin and Begin developing your design.

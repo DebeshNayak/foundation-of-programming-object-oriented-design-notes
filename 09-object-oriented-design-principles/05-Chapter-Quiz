@@ -1,7 +1,7 @@
 1. Code Smell is absolutely vital, core code.
 Ans: False
 
-2. Single Responsibility  Principle and Open/Closed principle are two of the
+2. Single Responsibility Principle and Open/Closed principle are two of the
    principles of object-oriented design that are grouped under the acronym SOLID.
 Ans: True
 
