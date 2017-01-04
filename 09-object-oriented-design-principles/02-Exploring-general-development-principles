@@ -1,0 +1,35 @@
+Exploring general development principles:
+Notes:
+- While object-oriented design programming doesn't have hard-and-fast rules,
+  several key principles will make maintaining and improving code easier.
+- Example include: only have one part of your system deal with a specific problem.
+  Don't write any code unless it serves a specific purpose; and don't write
+  excessively long comments on code.
+----------------
+General Software Development Principles:
+
+* DRY: Don't Repeat Yourself
+  - There should be one place in our system that deals with the particular problem.
+  Example:
+    - One place that gets taken care of, whether that's
+      - handling a business problem
+      - or storing or calculating a piece of data.
+
+* YAGNI: You Airn't Gonna Need it
+  - Solve the problems that you know exist, don't write speculative code,
+    solve today's problem.
+--------------
+Code Smells:
+- Code may compile, code may work, but it may not smell right.
+- Example:
+  - Long methods
+  - Very short or very long identifier
+  - Pointless comments
+  - God object
+    - This is where you have one master object that tries to do everything in the
+      program, or at least one object that seems to be doing very different
+      responsibilities that have nothing to do with each other.
+  - Feature envy:
+    - If a class seems to do very little except use all the methods of other 
+      class, It's another sign that you need to rethink the roles of one or the
+      other.

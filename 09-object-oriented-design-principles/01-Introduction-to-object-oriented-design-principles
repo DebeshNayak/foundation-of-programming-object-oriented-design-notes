@@ -1,0 +1,13 @@
+Introduction to object-oriented design principles:
+Notes:
+- One of the big drawbacks of object-oriented design is that, unlike with most
+  programming, you don't get crashes and error messages if your class architecture
+  has structural flaws.
+- This may seem like a benefit -- the application will still run -- but leaving
+  these flaws in place makes code unnecessarily complicated and difficult to maintain.
+---------------
+- If we don't use inheritance or other object oriented principle the program works
+  but hard to read / understand / maintain.
+- So we have to follow popular OOP general principle which are guideline for
+  better OOP design.
+- These design principle are the things that should be iterate through class design.
