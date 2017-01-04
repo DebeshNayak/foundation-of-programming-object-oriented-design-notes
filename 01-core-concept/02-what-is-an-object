@@ -1,4 +1,10 @@
 What is an Object?
+Notes:
+- Real-world objects have their own identities and properties.
+- Objects in computer programming also do, but they go further.
+  For example, a date or bank account can be an object in a computer program,
+  while you can't touch one in real life.
+-------------------
 - What is an object in real world.
 - Identity, attribute and behavior describe an object
 
@@ -9,9 +15,3 @@ Object are not always visible items
 - Can we use "the" in-front of that word
 
 ***How to create object? - in next topic
-
-Notes:
-- Real-world objects have their own identities and properties.
-- Objects in computer programming also do, but they go further.
-  For example, a date or bank account can be an object in a computer program,
-  while you can't touch one in real life.

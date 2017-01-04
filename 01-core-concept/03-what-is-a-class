@@ -1,4 +1,12 @@
 What is a class?
+Notes:
+- Classes are blueprints describing attributes and behavior that you use to create
+  objects while programming.
+- In OO Languages, you'll work with a lot of classes already written,
+  such as "Java Class Library".
+- This availability enables you to create objects without also having to  create
+  the same classes repeatedly for each program.
+-------------------------
 - class: the blueprint
 - object: the house
 ---------------

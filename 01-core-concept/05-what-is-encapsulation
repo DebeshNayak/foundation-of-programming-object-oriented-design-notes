@@ -1,10 +1,11 @@
+What is encapsulation?
 Notes:
 - Encapsulation means hiding attributes in programming so that you can make
   changes in one place without having to also make changes in the other parts of an application.
 - Otherwise, if you make information more open, you risk a change in one location
   leading to cascading, multiple changes elsewhere.
 - It is better to restrict the direct access of one piece of data.
-
+-----------------------
 What is encapsulation?
 - Same as capsule, medicine capsule, food capsule
 - Surrounding something - keep the contain together and protect them

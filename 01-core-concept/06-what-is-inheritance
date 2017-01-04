@@ -1,9 +1,10 @@
+What is inheritance?
 Notes:
 - Programming quickly and effectively is all about reusing code and keeping it as clean as possible.
 - Inheritance is one function that helps eliminate the need to create completely new class in OOP.
 - What is inheritance? Think of inheritance in programming like making a clone.
 - The new set will have everything the old set has, but with the option to add new information and function.
-
+--------------------------
 What is inheritance?
 - Great form of code reuse.
 - Like customer class can be inherited from person class

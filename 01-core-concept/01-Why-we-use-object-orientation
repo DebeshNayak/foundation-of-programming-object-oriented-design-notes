@@ -1,6 +1,7 @@
+Why we use object orientation:
 * Object-orientation provides a real-world programming solution to people working in the world of
   - web applications,
-  = mobile apps, and
+  - mobile apps, and
   - game development.
 * It isn't a language, but rather a set of ideas that multiple languages support.
 * Object-orientation is split into self-contained objects with their own logic and data,
