@@ -19,7 +19,7 @@ interface Printable {
 ---------------
 Implementing Interfaces:
 - Implementing interfaces is similar to "signing a contract".
-- So we have to define the declared method of the interface in the implemented class.
+- So we have to define all the declared method of the interface in the implemented class.
 - If not then we got a compile error.
 - The more classes use the same interface the better.
 

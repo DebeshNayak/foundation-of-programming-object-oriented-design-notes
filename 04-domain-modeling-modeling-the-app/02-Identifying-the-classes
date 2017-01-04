@@ -16,7 +16,7 @@ Go through the use case/user story and start picking up(make underline) all the
   - "Customer" provides "payment" and "address" to process sale.
   - "System" validates "payment" and responds by confirming "order", and provides "order
     number" and customer can use to check on "order status".
-  - System" will send customer a copy of "order details" by "email".
+  - System will send customer a copy of "order details" by "email".
 
 Step - 3:
 - List all nouns:

@@ -1,8 +1,7 @@
 Working with advanced UML diagrams:
 Notes:
 - State machine diagrams don't concentrate on the programming process but rather
-  on a sing object,
-  with the aim being to track the way it changes state at various times.
+  on a single object, with the aim being to track the way it changes state at various times.
 - Meanwhile, an activity diagram is a form of flowchart that tracks the decisions
   and transitions in part of a system.
 - One variant of the activity diagram splits different classes in a visual style
@@ -22,5 +21,5 @@ UML Diagrams:
 10. Profile Diagram
 11. Communication Diagram
 12. Timing Diagram
-13. composite Structure Diagram
+13. Composite Structure Diagram
 14. Interaction Overview Diagram

@@ -1,7 +1,9 @@
+Defining Requirements:
 Notes:
   - Before you sit down to design a program, you need to know what the program is
     expected to do and if there are any functional and non-functional requirements.
   - Defining requirements before you get started saves time in coding.
+----------------
 Gathering Requirements:
 1. Functional Requirement: what does it do?
   - Features / Capabilities

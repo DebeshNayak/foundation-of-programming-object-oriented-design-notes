@@ -1,5 +1,5 @@
 Identifying the Scenarios:
-Notes
+Notes:
 - When programming, a broad use case can usually be broken down into smaller scenarios.
 - A scenario is defined as a goal that an actor can accomplish with a single encounter.
 - Identifying the scenario may be as simple as looking at potential outcomes.
@@ -41,7 +41,7 @@ Extension: One or more items out of stock.
   (a) Customer removes out-of-stock item and continues
   (b) Customer cancels entire order
   ...
-Extension: Customer ayment method rejected.
+Extension: Customer payment method rejected.
   (a) ...
 ----------------
 * When writing scenario use "Active Voice" and omit needless words:

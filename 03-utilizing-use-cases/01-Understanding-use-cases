@@ -1,9 +1,10 @@
+Understanding use cases:
 Notes:
 - After determining what an application must do, it is equally important to define
   how users access those functions.
 - Understanding use cases allows you to map out, in laymen's terms, how a user
   will access functions of your application.
-
+-------------------------
 Understanding use cases:
 1. Use Cases:
   i - Title: (what is the goal?)

@@ -1,10 +1,11 @@
+Understanding the object oriented analysis and design:
 Notes:
 - Object-oriented programming allows you to organize complex data sets in a way that makes manipulating data
   more streamlined during coding.
 - In large part, this is due to the use of classes and objects within data sets.
-- Understanding object-oriented analysis and design processes helps yo learn how
+- Understanding object-oriented analysis and design processes helps you learn how
 to identify classes and objects for use in your development projects.
-
+----------------
 The object-oriented design process:
 ? How to identify the classes.
 There are 5 process to do this:
@@ -47,4 +48,5 @@ The output could be on whiteboard, notebook, piece of paper or using some electr
   - The methods in those classes
   - Interaction between those object in the application.
 
-- In iterative approach of software development, we need to revisit and refine these steps frequently during development cycle.
+- In iterative approach of software development, we need to revisit and refine these
+  steps frequently during development cycle.

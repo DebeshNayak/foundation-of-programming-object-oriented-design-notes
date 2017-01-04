@@ -6,16 +6,12 @@ Notes:
 Class Diagram:
 +--------------------------------+
 |         Spaceship              |
-|                                |
 +--------------------------------+
 |+ name: String                  |
 |- shieldStrength: Integer       |
-|                                |
-|                                |
 +--------------------------------+
 |- fire(): String                |
 |+ reduceShields (Integer)       |
-|                                |
 +--------------------------------+
 
 Simple class in Java:

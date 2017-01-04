@@ -15,18 +15,17 @@ Using static and shared member:
 
 Example:
   If we define the interest rate of a saving account class then it should not be
-  initialized in every object, it should be initialize as static variable.
+  initialized in every object, so instead it should be initialize as static variable.
 
-* This static is also called shared or class level variable (or method).
+* "Static" is also called "shared" or "class level"
 
 +--------------------+
 |                    |           +-------------------------------------------------+
-|   SavingAccount    |           |                     0.85%  static, shared, class-level
+|   SavingAccount    |           |              0.85%  static, shared, class-level |
 +--------------------+           |                                                 |
 | accountNumber      |           | +-----------+  +-----------+   +-----------+    |
 | balance            |           | | A7652     |  |B2311      |   |S2314      |    |
 | interestRate static|           | | $500      |  |$5000      |   |$7500      |    |
-|                    |           | |           |  |           |   |           |    |
 |                    |           | |           |  |           |   |           |    |
 +--------------------+           | | deposit() |  |deposit()  |   |deposit()  |    |
 | deposit()          |           | | withdraw()|  |withdraw() |   |withdraw() |    |
@@ -62,12 +61,12 @@ Example in Java:
 joeAcc.accountNumber
 aliceAcct.accountNumber
 
-- But when we access a class level variable we have to use the class name before it:
+- But when we access a class level/static variable we have to use the class name before it:
 
 Example in Java:
 SavingsAccount.interestRate = .85;
 
-- We can set the value of static variable before creating any object of this class
+- We can also set the value of static variable before creating any object of this class
 
 --------------
 
