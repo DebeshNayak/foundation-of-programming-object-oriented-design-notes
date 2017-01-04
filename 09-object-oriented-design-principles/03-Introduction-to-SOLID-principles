@@ -19,7 +19,7 @@ Notes:
   Example: Inheritance
 
          +--------------------+
-         |     BankAccount    | (Super class, parent class)
+         |     BankAccount    | 
          +--------------------+
          |accountName         |
          |balance             |
@@ -32,7 +32,7 @@ Notes:
 |                    |                       |
 |                    |                       |
 +-+--------------+    ++----------------+    +-+---------------+
-| CheckingAccount|    | SavingAccount   |    |InvestmentAccount| (Sub+classes, child class)
+| CheckingAccount|    | SavingAccount   |    |InvestmentAccount|
 +----------------+    +-----------------+    +-----------------+
 |lastCheckNum    |    |interestRate     |    |withdraw()       |overriding
 +----------------+    +-----------------+    +-----------------+

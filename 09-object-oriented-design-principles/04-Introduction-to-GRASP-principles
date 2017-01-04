@@ -1,0 +1,67 @@
+Introduction to GRAPS Principle:
+- GRASP stands for General Responsibility Assignment Software Patterns and it
+  refers to who has the responsibility of creating objects, getting them to interact, etc.
+- GRASP is one of the foundations of object-oriented design principles.
+- We can use the GRASP principles to draw up UML diagrams to figure out the
+  responsibility of your objects in your programming.
+--------------------
+GRASP principles of object-oriented design:
+  * General Responsibility Assignment Software Patterns
+    Creator
+    Controller
+    Pure Fabrication
+    Information Expert
+    High Cohesion
+    Indirection
+    Low Coupling
+    Polymorphism
+    Protected Variations
+
+- These are not dogma, rules.
+- We need to keep it in mind while drawing UML diagram.
+- It provides technique to figure out responsibility of the object.
+---------------
+* Expert / Information Expert:
+  - Assign the responsibility to the class that has the information needed to fulfill it.
+  Example:
+  Suppose we want the total of all item of the class in the following 3 object.
+  +-----------+     +----------+     +----------+
+  | Customer  |     |ShopCart  |     |  Item    |
+  +-----------+     +----------+     +----------+
+  - Then we put the responsibility in the "ShopCart" object
+---------------
+* Creator:
+  - Who is responsible for creating an object?
+  Ex: Principle of composition
+---------------
+* Low coupling / High cohesion:
+  - Coupling: the level of dependencies between objects
+  - Cohesion: the level that a class contains focused, related behaviors
+
+  The aim is LOW COUPLING & HIGH COHESION.
+------------
+* Controller:
+  - Don't connect UI elements directly to business objects.
+    (problem: high coupling, low cohesion)
+
+  +--------------+      +-------------------+          +--------------------+
+  |Business Objec|<---->|Controller Object  |<-------->|User Interface Objec|
+  +--------------+      +-------------------+          +--------------------+
+--------------
+* Indirection:
+  - To reduce coupling, introduce an intermediate object.
+  - If you have multiple objects that need to talk to each other,
+    it's very easy to have HIGH COUPLING between them where there is a lot of dependencies.
+    And what we can do instead is reduce those direct connections and put an "indirection object"
+    in between them to simplify the amount of connections that each object has to make.
+-------------
+* Polymorphism:
+  - Automatically correct behavior based on type.
+    - As opposed to: conditional logic that checks for particular types
+------------
+* Protected Variations:
+  - Protect the system from changes and variations
+    - Identify the most likely points of change
+- Use multiple technique: Encapsulation, LSP, OCP
+---------------------
+Object oriented design principle help us to write easily readable, maintainable and flexible code.

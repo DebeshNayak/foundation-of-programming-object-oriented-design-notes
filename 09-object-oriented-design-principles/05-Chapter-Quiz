@@ -1,0 +1,10 @@
+1. Code Smell is absolutely vital, core code.
+Ans: False
+
+2. Single Responsibility  Principle and Open/Closed principle are two of the
+   principles of object-oriented design that are grouped under the acronym SOLID.
+Ans: True
+
+3. LOW COUPLING means reducing dependencies between objects, and Cohesion is a
+  measure of how focused the internal behavior of a class is.
+Ans: True
