@@ -1,3 +1,64 @@
 Introduction to SOLID principles:
 Notes:
-- 
+- The acronym SOLID encompasses five principles:
+  - S: Single Responsibility Principle
+  - O: Open/Closed Principle
+  - L: Liskov Substitution Principle
+  - I: Interface Segregation Principle
+  - D: Dependency Principle
+- SOLID is one of the foundations of object-oriented programming.
+- This principle tie back into object-oriented design.
+---------------
+1. Single responsibility principle:
+  - An object should have one reason to exist
+  - One reason to change
+  - one primary responsibility
+-------------
+2. Open/Closed Principle
+  - Open for extension, but closed to modification.
+  Example: Inheritance
+
+         +--------------------+
+         |     BankAccount    | (Super class, parent class)
+         +--------------------+
+         |accountName         |
+         |balance             |
+         +--------------------+
+         |deposit()           |
+         |withdraw()          |
++------> |                    | <------------+
+|        +---------+----------+              |
+|                    ^                       |
+|                    |                       |
+|                    |                       |
++-+--------------+    ++----------------+    +-+---------------+
+| CheckingAccount|    | SavingAccount   |    |InvestmentAccount| (Sub+classes, child class)
++----------------+    +-----------------+    +-----------------+
+|lastCheckNum    |    |interestRate     |    |withdraw()       |overriding
++----------------+    +-----------------+    +-----------------+
+------------------
+3. Liskov Substitution principle:
+  - Derived classes must be substitutable for their base classes
+  - Extention of inheritance: Means what the base class does could be done by the child class
+------------------
+4. Interface segregation principle:
+  - Multiple specific interfaces are better than one general purpose interface.
+-----------------
+5. Dependency inversion principle:
+  - Depend on abstractions, not on concretions
+
+               +------------+
+               |   Store    |
+          +----+------------+---+
+          |                     |
+          |                     |
+    +-----+----+          +-----+----+
+    |  Reader  |          |  Writer  | layer of abstraction
+    +-----+----+          +----+-----+
+         |                     |
+         |                     |
++--------+--------+   +-------+---------+
+|AudioFileReader  |   |AudioFileWriter  |
++-----------------+   +-----------------+
+
+  - It allow substitution, flexibility going forward.
